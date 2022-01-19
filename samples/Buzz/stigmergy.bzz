@@ -1,0 +1,8 @@
+# Create a new virtual stigmergy
+v = stigmergy.create(1)
+
+# Write a (key,value) entry
+v.put("a", 6)
+
+# Read a value
+x = v.get("a")

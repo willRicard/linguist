@@ -636,6 +636,15 @@ Browserslist:
   tm_scope: text.browserslist
   ace_mode: text
   language_id: 153503348
+Buzz:
+  type: programming
+  color: "#f9cc33"
+  extensions:
+  - ".bzz"
+  interpreters:
+  - buzzrun
+  tm_scope: source.buzz
+  language_id: 937675235
 C:
   type: programming
   color: "#555555"

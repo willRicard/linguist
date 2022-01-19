@@ -1,0 +1,9 @@
+# Print own id
+print("My id is '", id, "'")
+
+# Process sensor data
+t = temperature.get()
+maxt = math.max(t, maxt)
+
+# Motion
+set_wheels(5, 5)

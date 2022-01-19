@@ -1,0 +1,15 @@
+# Creation of a swarm with identifier 1
+s = swarm.create(1)
+
+# Join swarm if robot id is even
+s.select(id % 2 == 0)
+
+# Leave swarm if id is greater than 5
+s.unselect(id > 5)
+
+# Assign a task to a swarm
+s.exec(function() { ... })
+
+# Create new swarm with robots belonging
+# to both swarms a and b
+i = swarm.intersection(100, a, b)

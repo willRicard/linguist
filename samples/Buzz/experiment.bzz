@@ -1,0 +1,41 @@
+include "vec2.bzz"
+include "string.bzz"
+include "table.bzz"
+include "queue.bzz"
+
+include "includes/move.bzz"
+include "includes/constants.bzz"
+include "includes/failure.bzz"
+include "includes/radiation_sensor.bzz"
+include "includes/radiation.bzz"
+
+function init() {
+    current_step = 0
+    set_leds(0, 255, 0)
+    init_random_search()
+
+    sources = { .0 = radiation_source.new(0.0, 0.0, 1.0)}
+    sensor = radiation_sensor.new(sources)
+}
+
+# Executed every time step
+function step() {
+    if (current_step < EXPERIMENT_LENGTH and (not is_failed())) {
+        random_search()
+    }
+
+    # Stop robots when experiment is over
+    if (current_step == EXPERIMENT_LENGTH) {
+        log("Experiment terminated")
+        set_wheels(0.0, 0.0)
+        set_leds(255, 0, 0)
+    }
+
+    current_step = current_step + 1
+}
+
+function reset() {
+}
+ 
+function destroy() {
+}

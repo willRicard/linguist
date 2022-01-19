@@ -1,0 +1,8 @@
+---
+name: buzz-vscode-extension
+version: e99e593f2fb29bbc167a9ddb878d604a3e0ba0e6
+type: git_submodule
+homepage: https://github.com/samarseneault/buzz-vscode-extension.git
+license: none
+licenses: []
+notices: []

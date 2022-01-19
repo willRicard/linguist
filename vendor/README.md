@@ -61,6 +61,7 @@ This is a list of grammars that Linguist selects to provide syntax highlighting 
 - **Brainfuck:** [Drako/SublimeBrainfuck](https://github.com/Drako/SublimeBrainfuck)
 - **Brightscript:** [cmink/BrightScript.tmbundle](https://github.com/cmink/BrightScript.tmbundle)
 - **Browserslist:** [browserslist/browserslist-vscode](https://github.com/browserslist/browserslist-vscode)
+- **Buzz:** [samarseneault/buzz-vscode-extension](https://github.com/samarseneault/buzz-vscode-extension)
 - **C:** [textmate/c.tmbundle](https://github.com/textmate/c.tmbundle)
 - **C#:** [dotnet/csharp-tmLanguage](https://github.com/dotnet/csharp-tmLanguage)
 - **C++:** [textmate/c.tmbundle](https://github.com/textmate/c.tmbundle)

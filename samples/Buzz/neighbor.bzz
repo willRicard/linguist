@@ -1,0 +1,11 @@
+# Calculate interaction with nearby robots
+var dir = neighbors.reduce(force_sum_kin, { x = 0, y = 0})
+dir.x = dir.x / neighbors.count()
+dir.y = dir.y / neighbors.count()
+
+# Broadcast / listen to data
+neighbors.broadcast("dist_to_source", mydist)
+neighbors.listen("dist_to_source",
+  function(vid, value, rid) {
+    mydist = math.min(mydist, neighbors.get(rid).distance + value)
+  })
